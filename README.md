@@ -1,9 +1,9 @@
 # J❤5(JS25)🛸 Javascript Study
 ## 📌참여자 👓
-- <a src="https://github.com/hyunbingil">길 현 빈</a>
-- <a src="https://github.com/nsbg">김 보 금</a>
-- <a src="https://github.com/tbnsok40">임 성 후</a>
-- <a src="https://github.com/dongyeopca">차 동 엽</a>
+- <a href="https://github.com/hyunbingil">길 현 빈</a>
+- <a href="https://github.com/nsbg">김 보 금</a>
+- <a href="https://github.com/tbnsok40">임 성 후</a>
+- <a href="https://github.com/dongyeopca">차 동 엽</a>
 ## 📌개요 🛬
 - 자바스크립트를 익혀 좀 더 동적인 웹개발을 하기 위한 스터디입니다.
 - 코딩 테스트를 자바스크립트로 칠 수 있을 만큼 단련합니다.
