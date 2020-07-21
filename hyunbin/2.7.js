@@ -1,9 +1,12 @@
 function max(...rest) {
-    let numbers = [...rest];
-    for (let i = 0; i < numbers.length; i++) {
-        let max = 
+    arr = [...rest];
+    let max = arr[0]
+    for(let i=1; i<arr.length; i++) {
+        if(max < arr[i]) {
+            max = arr[i]
+        }
     }
-    return 0;
+    return max;
 }
 
 const result = max(1,2,3,4,10,5,6,7);
