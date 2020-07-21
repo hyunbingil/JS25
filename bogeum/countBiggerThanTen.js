@@ -6,7 +6,7 @@ function countBiggerThanTen(numbers) {
             cnt ++;
         }
     });
-
+    
     return cnt;
 }
 
