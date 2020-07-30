@@ -1,13 +1,20 @@
 function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    var i, tabinex, tabcontents;
+    tabinex = document.getElementsByClassName('tabinex');
+    for (i = 0; i < tabinex.length; i++) {
+        tabinex[i].className = tabinex[i].className.replace(" active", "");
+        console.log(tabinex[i])
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+    tabcontents = document.getElementsByClassName('tabcontents');
+    for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].style.display = 'None';
     }
+
+    // tabName = evt.currentTarget(tabName).display
+    // document.getElementsById(tabName).style.display = 'block';
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += ' active'
+    // evt.currentTarget.className = 'tabindex active'
+
 }

@@ -12,7 +12,7 @@
         height: 50px;
     }
 
-    .tablinks {
+    .tabinex {
         float: left;
         width: 50%;
         height: 100%;
@@ -24,20 +24,30 @@
         background-color: #a6a6a6;
     }
 
-    .tablinks.active {
+    .tabinex.active {
         color: #000;
         background-color: #fff;
+    }
+
+    .tabcontents {
+        display: block;
     }
 </style>
 
 <body>
     <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'tab1')">탭1</button>
-        <button class="tablinks" onclick="openTab(event, 'tab2')">탭2</button>
+        <button class="tabinex active" onclick="openTab(event, 'tabName1')">1</button>
+        <button class="tabinex" onclick="openTab(event, 'tabName2')">2</button>
     </div>
+    <div class="tabcontents" id='tabName1' style='display:block'>Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Excepturi
+        architecto odio provident ipsam ducimus pariatur corrupti labore praesentium laboriosam facere, beatae, amet
+        nihil quidem quas, cum quam. Libero, voluptatum error.</div>
 
-    <div id="tab1" class="tabcontent" style="display: block;"> 탭1 내용</div>
-    <div id="tab2" class="tabcontent" style="display: none;"> 탭2 내용</div>
+    <div class="tabcontents" id='tabName2' style='display:none'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Fuga quam enim
+        voluptatem impedit alias odit delectus obcaecati molestiae vel? Quae beatae enim recusandae itaque possimus
+        optio quaerat animi aliquid ut!</div>
     <script src="tap.js"></script>
 </body>
 
