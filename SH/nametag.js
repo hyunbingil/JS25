@@ -4,8 +4,7 @@ const form = document.querySelector(".js-form"),
     greeting = document.querySelector(".greetings");
 
 const USER_LS = "User",
-    SHOWING_CN = "showing";
-
+    SHOWING_CN = "showing"; // css 작용--> classList.add/remove
 //handleSubmit의 인자로 event 안넣어주면 작동 안함.
 
 function saveName(text) {
@@ -35,12 +34,11 @@ function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     // 한번 입력하고 엔터누르면, 입력창이 사라지게 하는 장치
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `${text}`;
+    greeting.innerText = `HI ${text}`;
 }
 
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS);
-
     if (currentUser === null) {
         askForName();
     } else {
