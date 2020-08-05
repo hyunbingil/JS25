@@ -12,7 +12,7 @@
         height: 50px;
     }
 
-    .tabinex {
+    .tabindex {
         float: left;
         width: 50%;
         height: 100%;
@@ -24,7 +24,7 @@
         background-color: #a6a6a6;
     }
 
-    .tabinex.active {
+    .tabindex.active {
         color: #000;
         background-color: #fff;
     }
@@ -36,18 +36,11 @@
 
 <body>
     <div class="tab">
-        <button class="tabinex active" onclick="openTab(event, 'tabName1')">1</button>
-        <button class="tabinex" onclick="openTab(event, 'tabName2')">2</button>
+        <button class="tabindex active" onclick='openTap(event,"tab1")'>1</button>
+        <button class="tabindex" onclick='openTap(event,"tab2")'>2</button>
     </div>
-    <div class="tabcontents" id='tabName1' style='display:block'>Lorem ipsum, dolor sit amet consectetur adipisicing
-        elit. Excepturi
-        architecto odio provident ipsam ducimus pariatur corrupti labore praesentium laboriosam facere, beatae, amet
-        nihil quidem quas, cum quam. Libero, voluptatum error.</div>
-
-    <div class="tabcontents" id='tabName2' style='display:none'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Fuga quam enim
-        voluptatem impedit alias odit delectus obcaecati molestiae vel? Quae beatae enim recusandae itaque possimus
-        optio quaerat animi aliquid ut!</div>
+    <div class="tabcontents" id='tab1' style='display: block;'>1</div>
+    <div class="tabcontents" id='tab2' style='display: none;'>2</div>
     <script src="tap.js"></script>
 </body>
 
