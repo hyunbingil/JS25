@@ -38,19 +38,27 @@
 - JS 문제 못 푼 문제 풀기
 - 노마드 코더 강의 3-1 ~ 3-4 들으면서 복습
 
+### 8月
+### WEEK4 📁
+- todolist 마무리하기
+- 본격적으로 만들어 볼 프로젝트 아이디어 구상하기
+#### HOMEWORK 📃
+- 오늘 만들어본 todolist 확장시켜보기\
+ex) 배경 몇 초마다 바뀌게하기, css로 예쁘게 꾸며보기, 배경 이름 숫자말고 다른 것으로 받아와보기 등
+- 이론 다지기 문제 2문제
+
 ## 📌스터디 방식 👩‍💻
 : 초반에는 이론을 주로 다지고, 그 후에는 문제 풀이와 미니프로젝트 진행을 병행한다.\
 : 주 마다 돌아가면서 스터디를 진행한다.
 ### WEEK1 (2020.07.15) 💌
-```길현빈``` : 자바스크립트 기초, 유용한 함수들\
-<a src="https://github.com/hyunbingil/JS25/tree/master/lecture/week1">💯</a>
+```길현빈``` : 자바스크립트 기초, 유용한 함수들
 
 ### WEEK2 (2020.07.22) 💌
-```임성후``` : 동기/비동기(callback, promise, async, await), 간단한 실습\
-<a src="https://github.com/hyunbingil/JS25/tree/master/lecture/week2">💯</a>
+```임성후``` : 동기/비동기(callback, promise, async, await), 간단한 실습
 
 ### WEEK3 (2020.07.29) 💌
-: 자바스크립트 문제 풀이(심화), todolist 만들기(초반)
+```길현빈``` : 자바스크립트 문제 풀이(심화), todolist 만들기(초반)
 > 텍스트 에디터를 만들려고 했지만, 너무 복잡해서 todolist 먼저 실습
 
-<a src="https://github.com/hyunbingil/JS25/tree/master/lecture/week3">💯</a>
+### WEEK4 (2020.08.05) 💌
+```차동엽``` : todolist 만들기(마무리), 프로젝트 구상
