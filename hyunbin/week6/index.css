@@ -1,0 +1,19 @@
+#left {
+    height: 600px;
+    display: inline-block;
+}
+
+#right {
+    height: 600px;
+    display: inline-block;
+}
+
+.left_img, .right_img {
+    height: 488px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#left_name, #right_name {
+    display: inline-block;    
+}
