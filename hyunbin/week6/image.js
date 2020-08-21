@@ -1,8 +1,15 @@
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
-
+const leftName = document.querySelector("#left_name");
+const rightName = document.querySelector("#right_name");
+const modal = document.querySelector(".modal-wrapper");
+const winnerName = document.querySelector(".winner_name");
 // array 정의
 let img_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+let img_name = ['잭슨', '쭈니', '미애', '비앙카',
+                '애플', '뽀야미','시베리아', '사이다',
+                '모니카', '피터', '나탈리', '솔미',
+                '대장', '패치', '차둘', '부케'];
 let new_img_number = [];
 let select = [];
 
@@ -11,6 +18,7 @@ function FirstpaintLeftImage(imgNumber){
     const image = new Image();
     // console.log(`left 이미지 번호는 ${imgNumber}`);
     image.src = `./img/${imgNumber}.png`;
+    // image.onclick = storeNewLeft();
     image.classList.add("left_img");
     left.appendChild(image);
 }
@@ -19,8 +27,17 @@ function FirstpaintRightImage(imgNumber){
     const image = new Image();
     // console.log(`right 이미지 번호는 ${imgNumber}`);
     image.src = `./img/${imgNumber}.png`;
+    // image.onclick = storeNewRight();
     image.classList.add("right_img");
     right.appendChild(image);
+}
+
+function paintLeftName(imgNumber){
+    leftName.innerText = img_name[imgNumber-1];
+}
+
+function paintRightName(imgNumber){
+    rightName.innerText = img_name[imgNumber-1];
 }
 
 function getRandom() {
@@ -40,6 +57,8 @@ function init() {
 
     FirstpaintLeftImage(leftRandomNumber);
     FirstpaintRightImage(RightRandomNumber);
+    paintLeftName(leftRandomNumber);
+    paintRightName(RightRandomNumber);
 }
 
 console.log(img_number)
@@ -60,7 +79,10 @@ function storeNewLeft(){
     new_img_number.push(select[0]);
     console.log(new_img_number);
     if ((img_number.length == 0) && (new_img_number.length == 1)) {
-        alert(`결승진출 끝`);
+        let img = document.querySelector(".winner");
+        img.src = `./img/${new_img_number[0]}.png`;
+        winnerName.innerText = img_name[new_img_number[0]-1];
+        modal.style.display = "flex";
     }
     else if (img_number.length == 0) {
         img_number = new_img_number;
@@ -79,7 +101,10 @@ function storeNewRight(){
     new_img_number.push(select[1]);
     console.log(new_img_number);
     if ((img_number.length == 0) && (new_img_number.length == 1)) {
-        alert(`결승진출 끝`);
+        let img = document.querySelector(".winner");
+        img.src = `./img/${new_img_number[0]}.png`;
+        winnerName.innerText = img_name[new_img_number[0]-1];
+        modal.style.display = "flex";
     }
     else if (img_number.length == 0) {
         img_number = new_img_number;
@@ -107,4 +132,6 @@ function changeInit() {
 
     changeLeftImage(leftRandomNumber);
     changeRightImage(rightRandomNumber);
+    paintLeftName(leftRandomNumber);
+    paintRightName(rightRandomNumber);
 }
