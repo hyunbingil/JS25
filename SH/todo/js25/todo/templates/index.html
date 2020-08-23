@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=zaj9t5o90j"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min%20(1).css">
+    <!-- 처음 url지정을 로컬호스트로 해줬는데 이는 즉 django를 띄워야 한다는 소리  (runserver가 필요하다는 말)-->
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div id="map" style="width:100%;height:400px;"></div>
+    </div>
+
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Schedule</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Time</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">To-do</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">Remark</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>To-do</th>
+                    <th>Remark</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+
+</body>
+<script src="/static/js/index.js"></script>
+<script>
+
+    var HOME_PATH = window.HOME_PATH || '.';
+    var position = new naver.maps.LatLng(37.3849483, 127.1229117);
+
+    var map = new naver.maps.Map('map', {
+        center: position,
+        zoom: 18
+    });
+
+    var markerOptions = {
+        position: position.destinationPoint(90, 15),
+        map: map,
+        icon: {
+            url: HOME_PATH + '/static/sally.png',
+            size: new naver.maps.Size(100, 100),
+            origin: new naver.maps.Point(1, 1),
+            anchor: new naver.maps.Point(25, 25)
+        }
+    };
+
+    var marker = new naver.maps.Marker(markerOptions);
+
+
+</script>
+
+
+</html>
