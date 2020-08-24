@@ -16,18 +16,14 @@ let select = [];
 // 1. 맨 처음 이미지 띄워주기
 function FirstpaintLeftImage(imgNumber){
     const image = new Image();
-    // console.log(`left 이미지 번호는 ${imgNumber}`);
     image.src = `./img/${imgNumber}.png`;
-    // image.onclick = storeNewLeft();
     image.classList.add("left_img");
     left.appendChild(image);
 }
 
 function FirstpaintRightImage(imgNumber){
     const image = new Image();
-    // console.log(`right 이미지 번호는 ${imgNumber}`);
     image.src = `./img/${imgNumber}.png`;
-    // image.onclick = storeNewRight();
     image.classList.add("right_img");
     right.appendChild(image);
 }
@@ -61,9 +57,8 @@ function init() {
     paintRightName(RightRandomNumber);
 }
 
-console.log(img_number)
 init();
-console.log(img_number)
+
 
 function changeLeftImage(imgNumber){
     let img = document.querySelector(".left_img");
