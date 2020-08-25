@@ -9,7 +9,7 @@ function zoomOut(event) {
     event.target.style.height = "280px";
     event.target.style.transition = "all 0.5s";
 }
-
+  
 // 모달창
 let modal = document.getElementById('myModal');
  
