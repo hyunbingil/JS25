@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgImage {
+            position: absolute;
+            /* 조상 클래스가 없으므로, absolute: body를 기준으로 설정 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: fadeIn 0.5s linear;
+        }
+
+        .album {
+            background: rgb(202, 149, 149);
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="album" id='album1'>
+        <img id='abc' src="C:/Users/User/Downloads/1.jpg" onclick="paintImage()">
+    </div>
+    <!-- <form action="" class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+    </form>
+
+    <ul class="js-toDoList"></ul> -->
+
+    <script src="background.js"></script>
+</body>
+
+</html>

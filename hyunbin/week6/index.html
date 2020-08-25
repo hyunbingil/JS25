@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이상형 월드컵</title>
+    <link rel="StyleSheet" href="index.css"/>
+</head>
+<body>
+    <img src="./img/다운로드.jpg" class="backgroundImage">
+    <h1>모여봐요 동물의 숲 이상형 월드컵</h1>
+    <div id="whole_wrapper">
+        <div id="img_wrapper">
+            <div id="left" class="left" onclick="storeNewLeft()">
+            </div>
+            <div id="right" class="right" onclick="storeNewRight()">
+            </div>
+        </div>
+        <div id="name_wrapper">
+            <div class="left" id="left_name">
+                잭슨 
+            </div>
+            <div class="right" id="right_name">
+                잭슨
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" style="display: none;">
+        <div class="modal">
+            <div class="modal-title">당신의 이상형은?</div>
+            <img class="winner" src="./img/1.png">
+            <p class="winner_name">잭슨</p>
+            <div class="close-wrapper">
+                <button class = "close-button">다시하기</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span class="js-weather"></span>
+    </div>
+    <script src="image.js"></script>
+    <script src="modal.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
