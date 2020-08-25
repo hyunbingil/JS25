@@ -19,6 +19,10 @@ h1{
     font-size: 2cm;
 }
 
+span {
+    display: inline-block;
+}
+
 .left {
     /* border: 1px solid black; */
     width: 49%;
