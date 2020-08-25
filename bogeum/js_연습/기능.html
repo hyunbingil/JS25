@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 기능 & API 연습</title>
+</head>
+<body>
+    <div class="container">
+        <div id="myModal" class="modal">
+            
+            <img class="img-city" 
+            id="first" 
+            src="./image/photo_1.jpg" 
+            onmouseenter="zoomIn(event)"
+            onmouseleave="zoomOut(event)"
+            />
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close"></span>                                                               
+              <p>광안대교</p>
+            </div>
+       
+        </div>
+        
+        <img class="img-city"
+        src="./image/photo_2.jpg"
+        onmouseenter="zoomIn(event)"
+        onmouseleave="zoomOut(event)"
+        />
+        
+        <img class="img-city"
+        src="./image/photo_3.jpg"
+        onmouseenter="zoomIn(event)"
+        onmouseleave="zoomOut(event)"
+        />
+    </div>
+
+    <div class="weather-container">
+        <span class="js-weather"></span>
+    </div>
+
+    <script src="기능.js"></script>
+    <script src="날씨.js"></script>
+</body>
+</html>
